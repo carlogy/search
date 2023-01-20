@@ -3,19 +3,31 @@
     <head>
         <title>Search</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="searchstylesheet.css">
     </head>
     <body>
-        <div id="container">
-            <li id ="flex-item"><a href="imagesearch.html">Image Search</a></li>
-            <li id="flex-item"><a href="advancedsearch.html">Advanced Search</a></li>
-
-        </div>
-        <div>
+        
+        <ul class="container">
+            <li class="flex-item">
+                <a href="imagesearch.html">Image Search</a>
+              </li>
+            <li class="flex-item">
+                <div id="nav-item"><a href="advancedsearch.html">Advanced Search</a>
+            </li>
+        </ul>
+                 
+ 
         <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+        <ul class="container">
+            <li class="flex-item">
+                <input type="text" name="q">
+                <button type="submit">Google Search</button>                  
+            </li>
+            <li>
+                <input type="submit" name="btnI" value="I'm Feeling Lucky">
+            </li>
+        </ul>
         </form>
-        </div>
+        
     </body>
 </html>

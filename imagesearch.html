@@ -3,17 +3,25 @@
     <head>
         <title>Image Search</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="searchstylesheet.css">
     </head>
     <body>
-        <div>
-            <a href="index.html">Back</a>
-        </div>
+        <nav>
+        <ul class="container">
+            <li class="flex-item">
+                <a href="index.html">Back</a>
+              </li>
+        </ul>
+        </nav>
         
         <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="hidden" name="tbm" value="isch">
-            <input type="submit" value="Image search">
+        <ul class="container">
+            <li class="flex-item">
+                <input type="text" name="q">
+                <input type="hidden" name="tbm" value="isch">
+                <input type="submit" value="Image search">
+            </li>   
+        </ul>
         </form>
     </body>
 </html>

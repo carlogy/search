@@ -3,18 +3,38 @@
     <head>
         <title>Advanced Search</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="searchstylesheet.css">
     </head>
     <body>
-        <div>
-            <a href="index.html">Back</a>
-        </div>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="text" name="as_epq"> <!-- "this exact word or phrase" -->
-            <input type="text" name="as_oq"> <!-- any of these words-->
-            <input type="text" name="as_eq"> <!-- "none of these words" -->
-            <input type="submit" value="Advanced Search">
-        </form>
+        <ul class="container">
+            <li class="flex-item">
+                <a href="index.html">Back</a>
+              </li>
+        </ul>
+           
+    <form action="https://www.google.com/search">
+        <ul class="container">
+            <li class="flex-item">
+            <label for="allwords">All of these words:</label>
+            <input type="text" name="q" id="allwords" ><!--all of these words-->
+            </li>
+            <li class="flex-item">
+                <label for="exact">This exact word or phrase:</label>
+                <input type="text" name="as_epq" id="exact" ><!--this exact word or phrase-->
+            </li>
+            <li class="flex-item">
+                <label for="any">Any of these words:</label>
+                <input type="text" name="as_oq" id="any" ><!--any of these words-->
+            </li>
+            <li class="flex-item">
+                <label for="none">None of these Words</label> 
+                <input type="text" name="as_eq" id="none"><!--none of these words -->
+            </li>
+            <li class="flex-item">
+                <button type="submit" id="advanced">Advanced Search</button>
+            </li>
+            
+        </ul>
+    </form>   
     </body>
 </html>
